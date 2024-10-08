@@ -1,0 +1,8 @@
+services:
+  lambda:
+    container_name: "lambda-container"
+    image: lambda-image
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    command: ["main"]
